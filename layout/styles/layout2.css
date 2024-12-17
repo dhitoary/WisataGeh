@@ -1,0 +1,135 @@
+/* Minimal CSS berdasarkan HTML yang diberikan */
+@charset "utf-8";
+@import url("fontawesome-free/css/fontawesome-all.min.css");
+
+body {
+  color: #A5A6AA;
+  background-color: #000000;
+}
+
+/* Header */
+#header {
+  padding: 30px 0;
+}
+#header #logo {
+  margin: 22px 0 0;
+}
+#header #logo a {
+  color: inherit;
+}
+
+/* Navigation */
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+#mainav {
+  line-height: normal;
+}
+#mainav ul ul {
+  visibility: hidden;
+  opacity: 0;
+}
+#mainav ul li:hover > ul {
+  visibility: visible;
+  opacity: 1;
+}
+#mainav li a {
+  display: block;
+  padding: 30px 0;
+}
+
+/* Page Intro */
+#pageintro {
+  padding: 200px 0 270px;
+  color: #FFFFFF;
+}
+#pageintro article {
+  max-width: 55%;
+}
+#pageintro .heading {
+  font-size: 4rem;
+  margin-bottom: 40px;
+}
+#pageintro article p {
+  line-height: 2.5rem;
+  font-size: 1.6rem;
+}
+
+/* Content Area */
+.container {
+  padding: 70px 0;
+}
+.elements article {
+  border: 1px solid #D7D7D7;
+  padding: 30px 15px;
+  background-color: #FFFFFF;
+  border-radius: 22px;
+}
+.elements article:hover {
+  border-color: #889C29;
+}
+.elements article i {
+  color: #B0CA35;
+  background-color: #F4F4F4;
+  width: 60px;
+  height: 60px;
+  font-size: 2rem;
+  text-align: center;
+  line-height: 60px;
+  border-radius: 12px;
+}
+.elements article:hover i {
+  color: #FFFFFF;
+  background-color: #B0CA35;
+}
+
+/* Footer */
+#footer {
+  padding: 80px 0;
+}
+#footer .logoname {
+  margin-bottom: 50px;
+}
+#footer input, #footer button {
+  border: 1px solid transparent;
+}
+#footer input {
+  background-color: rgba(255, 255, 255, .2);
+  color: #FFFFFF;
+}
+#footer button {
+  background-color: #B0CA35;
+  color: #FFFFFF;
+}
+#footer button:hover {
+  background-color: transparent;
+  color: inherit;
+  border-color: inherit;
+}
+
+/* Buttons */
+.btn {
+  border-radius: 14px;
+  color: #FFFFFF;
+  background-color: #B0CA35;
+  border-color: #B0CA35;
+}
+.btn:hover {
+  background-color: transparent;
+  color: inherit;
+}
+
+/* Back to Top */
+#backtotop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
+  text-align: center;
+  background-color: #B0CA35;
+  color: #FFFFFF;
+}
